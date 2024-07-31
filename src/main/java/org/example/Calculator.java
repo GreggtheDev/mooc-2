@@ -18,4 +18,15 @@ public class Calculator {
         // Return the computed factorial
         return result;
     }
+
+    // Calculates the binomial coefficient (n choose k)
+    public int binomialCoefficient(int n, int k) {
+        // Check if n or k are negative, or if k is greater than n
+        if (n < 0 || k < 0 || k > n) {
+            // If any condition is not met, throw an IllegalArgumentException with a descriptive message
+            throw new IllegalArgumentException("Parameters must be non-negative and the subset size (k) must not exceed the set size (n).");
+        }
+        // Use the factorial method to calculate the binomial coefficient
+        return factorial(n) / (factorial(k) * factorial(n - k));
+    }
 }
