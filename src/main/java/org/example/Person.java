@@ -20,3 +20,14 @@ public class Person {
         this.name = name;
         this.age = age;
     }
+
+    // Getter method to retrieve the name of the person
+    public String getName() {
+        return name;
+    }
+
+    // Getter method to retrieve the age of the person
+    public int getAge() {
+        return age;
+    }
+}
