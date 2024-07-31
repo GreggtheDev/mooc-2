@@ -29,4 +29,16 @@ public class Calculator {
         // Use the factorial method to calculate the binomial coefficient
         return factorial(n) / (factorial(k) * factorial(n - k));
     }
+
+    // Helper method to calculate factorial of non-negative integer
+    private int factorial(int n) {
+        // Initialize the result to 1 (factorial of 0 is 1)
+        int result = 1;
+        // Compute the factorial by multiplying all integers from 1 to n
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+        // Return the computed factorial
+        return result;
+    }
 }
