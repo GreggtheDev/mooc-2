@@ -10,3 +10,9 @@ import java.util.List;
 public class AverageSensor implements Sensor {
     private List<Sensor> sensors; // List of sensors that the average sensor controls
     private List<Integer> readings; // List of all readings performed
+
+// Constructor for AverageSensor
+public AverageSensor() {
+    this.sensors = new ArrayList<>();
+    this.readings = new ArrayList<>();
+}
