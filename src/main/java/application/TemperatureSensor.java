@@ -6,3 +6,8 @@ package application;
  */
 public class TemperatureSensor implements Sensor {
     private boolean isOn;
+
+    // Constructor for temperaturesensor
+    public TemperatureSensor() {
+        this.isOn = false;
+    }
