@@ -16,3 +16,8 @@ public AverageSensor() {
     this.sensors = new ArrayList<>();
     this.readings = new ArrayList<>();
 }
+
+// Adds a sensor to list of sensors
+public void addSensor(Sensor toAdd) {
+    this.sensors.add(toAdd);
+}
